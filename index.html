@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Form</title>
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="h1-head">Payment Form</h1>
+        <h2>Contact Information</h2>
+        <p>Name: * <input type="text" name="name" placeholder="Enter your name" required></p>
+            <!-- <p>
+               Gender: *
+             Male <input type="radio" name="male" id="male" required>
+            Female <input type="radio" name="Female" id="Female" required>
+            </p> -->
+            <p>
+                Sex: *
+
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+            </p>
+            
+            <p>
+                Email: * <input type="email" name="email" id="email" required placeholder="Enter your @email">
+            </p>
+            <p>
+                Address: <textarea name="address" id="address" cols="90" rows="10" placeholder="Enter your address"></textarea>
+            </p>
+            <p>
+                Pincode: * <input type="number" name="pincode" id="pincode" placeholder="123456" required>
+            </p>
+
+            <hr>
+
+            <!-- Card Information -->
+
+            <h2>Card Information</h2>
+            <p>Card Type *
+                <select name="card type" id="card type" required>
+                    <option value="">--Select Your Card type</option>
+                    <option value="visa">Visa</option>
+                    <option value="ruypay">Rupay</option>
+                    <option value="mastercard">mastercad </option>
+                </select>
+            </p>
+            <p>Card Number:* <input type="number" name="card mnumber" id="card number" required placeholder="1234-3345-3342"></p>
+            <p>Expiry Date:* <input type="date" name="expiry date" id="expiry date" required></p>
+            <p>CVV:* <input type="password" name="cvv" id="cvv" required placeholder="xyz"> 
+            </p>
+            <p>
+                <input type="submit" value="Pay Now">
+            </p>
+            
+       
+    </form>
+</div>
+</body>
+</html>
